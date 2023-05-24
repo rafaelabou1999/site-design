@@ -200,12 +200,12 @@ main {
 
 .quotation1 {
   position: absolute;
-  left: 5%;
+  left: 9%;
 }
 
 .quotation2 {
   position: absolute;
-  right: 34%;
+  right: 30%;
   top: 45%;
 }
 /*===================PART2==============*/
@@ -504,21 +504,15 @@ footer {
   width: 100%;
 }
 
-.name h5 {
-  font-size: 20px;
-  font-family: "Roboto", sans-serif;
-  text-transform: lowercase;
-  position: absolute;
-  bottom: -40px;
-  padding: 10px;
-  left: 0;
-  padding-left: 60px;
-  width: 100% !important;
-  background-color: rgb(46, 46, 48);
+.name {
+  background-color: rgb(203, 203, 255);
+  color: rgb(78, 78, 78);
+  height: 100px;
   text-align: center;
-  color: white;
+  padding-top: 10px;
+  font-size: 24px;
+  font-family: "Barlow", sans-serif;
 }
-
 .part6 {
   background-color: rgba(0, 0, 0, 0.633);
   padding-bottom: 20px;
@@ -1061,12 +1055,6 @@ footer {
   .contact1 {
     padding-right: 20%;
     border-right: 2px solid rgb(255, 255, 255);
-  }
-
-  .name h5 {
-    color: rgb(255, 255, 255);
-    font-size: 15px;
-    padding-left: 8px;
   }
 }
 
