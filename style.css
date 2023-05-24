@@ -505,8 +505,9 @@ footer {
 }
 
 .name {
-  background-color: rgb(203, 203, 255);
-  color: rgb(78, 78, 78);
+  background-color: rgba(11, 27, 255, 0.792);
+  color: white;
+
   height: 100px;
   text-align: center;
   padding-top: 10px;
@@ -1392,7 +1393,6 @@ footer {
   }
 
   .name h5 {
-    color:black;
     font-size: 15px;
     padding-left: 8px;
   }
