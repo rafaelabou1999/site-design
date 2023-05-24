@@ -618,7 +618,7 @@ footer {
 
 /*==============================================RESPONSIVE IN PROGRESS===============================================*/
 
-@media screen and (min-width: 1200px) and (max-width: 1290px) {
+@media screen and (min-width: 1200px) and (max-width: 1500px) {
   header img {
     margin-left: 0.4%;
   }
