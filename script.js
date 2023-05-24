@@ -1,5 +1,5 @@
 $(".header-arrow").click(function () {
-  $("html, body").animate({ scrollTop: 770 }, "30");
+  $("html, body").animate({ scrollTop: 670 }, "30");
 });
 
 $(window).on("scroll", function () {
