@@ -205,7 +205,7 @@ main {
 
 .quotation2 {
   position: absolute;
-  right: 42%;
+  right: 30%;
   top: 45%;
 }
 /*===================PART2==============*/
@@ -495,7 +495,7 @@ main {
   height: 200px;
   position: absolute;
   top: 20%;
-  left: 40%;
+  left: 43%;
 }
 /*===================FOOTER --- PART6==============*/
 footer {
@@ -617,3 +617,104 @@ footer {
 /*==IN PROGRESS WARNING===*/
 
 /*==============================================RESPONSIVE IN PROGRESS===============================================*/
+
+@media screen and (min-width: 1200px) and (max-width: 1290px) {
+  header img {
+    margin-left: 0.4%;
+  }
+
+  .header-p {
+    font-size: 40px;
+    color: white;
+    top: 15%;
+    right: 5%;
+    width: 38%;
+  }
+
+  .square {
+    top: 30%;
+    left: 5%;
+    width: 5%;
+  }
+  .square2 {
+    position: absolute;
+    left: 5%;
+  }
+  .square3 {
+    top: 72%;
+    left: 5%;
+  }
+
+  .line {
+    width: 0.1%;
+    right: 44%;
+  }
+
+  .social {
+    right: 35%;
+    top: 50%;
+  }
+
+  .quotation2 {
+    position: absolute;
+    right: 23%;
+    top: 45%;
+  }
+  .part3 h2 {
+    font-size: 35px;
+    padding-right: 50px;
+    color: rgb(46, 46, 48);
+    font-family: "Roboto", sans-serif;
+  }
+  .imgPart3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-top: 12%;
+    padding-left: 5%;
+  }
+  .textPart3 {
+    padding-top: 1%;
+    padding-left: 3%;
+  }
+  .part3 span {
+    font-style: bold;
+    color: #0d8aff;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    margin-left: 0.3%;
+    margin-top: 1.7%;
+    color: rgb(46, 46, 48);
+    font-family: "Roboto", sans-serif;
+  }
+
+  .list h3 {
+    font-size: 25px;
+  }
+
+  .list p {
+    font-size: 18px;
+  }
+  .item1And2 {
+    width: 50%;
+  }
+
+  .item3And4 {
+    width: 50%;
+    padding-left: 35px;
+  }
+
+  .grid {
+    padding-left: 10%;
+  }
+
+  .lineReview {
+    width: 1%;
+     top: 15%;
+    left: 47%;
+  }
+}
