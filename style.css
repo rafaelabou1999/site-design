@@ -2,15 +2,14 @@
   padding-top: 30px;
 }
 
-
-
-
+#fundamentals {
+  padding-top: 10px !important;
+}
 
 /*===================HEADER==============*/
-* {
+body {
   margin: 0;
   padding: 0;
-  box-sizing:border-box;
 }
 header {
   width: 100%;
@@ -201,7 +200,7 @@ main {
 
 .quotation1 {
   position: absolute;
-  left: 4%;
+  left: 9%;
 }
 
 .quotation2 {
@@ -213,7 +212,7 @@ main {
 .part2 {
   height: 850px;
   background-color: #000000;
-  padding-top: 10%;
+  padding-top: 6%;
   z-index: 10;
 }
 
@@ -294,7 +293,6 @@ main {
 
 .part3 {
   height: 700px;
-  padding-top:15px;
   background-color: #ffffff;
   display: flex;
   flex-direction: row;
@@ -507,7 +505,7 @@ footer {
 }
 
 .name {
-  background-color: black;
+  background-color: rgba(11, 27, 255, 0.577);
   color: white;
 
   height: 100px;
@@ -723,7 +721,7 @@ footer {
     position: absolute;
     top: 0;
     left: -2%;
-    width: 5℅;
+    width: 5%;
     height: 270px;
     border-radius: 50%;
   }
