@@ -6,6 +6,8 @@
   padding-top: 10px !important;
 }
 
+/*============menu burger========*/
+
 /*===================HEADER==============*/
 body {
   margin: 0;
@@ -107,7 +109,8 @@ nav {
   flex-direction: row;
   font-family: "Barlow";
   font-size: 18;
-  padding-left: 7%;
+  display: flex;
+  justify-content: space-around;
   background-color: #000000;
   color: white;
   position: fixed;
@@ -115,20 +118,23 @@ nav {
   left: 0;
 }
 
+.brand {
+  font-size: 30px;
+}
 nav ul {
+  margin-top: 2%;
   display: flex;
   flex-direction: row;
-  padding-left: 45%;
-  margin-top: 2%;
   background-color: #000000;
 }
 
 nav ul li {
-  padding-left: 8%;
+  padding-left: 3%;
   list-style: none;
   background-color: #000000;
 }
 nav ul li a {
+  margin-top: 2%;
   text-decoration: none;
   color: white;
   font-size: 18px;
@@ -205,11 +211,12 @@ main {
 
 .quotation2 {
   position: absolute;
-  right: 30%;
+  right: 25%;
   top: 45%;
 }
 /*===================PART2==============*/
 .part2 {
+  max-width: 100% !important;
   height: 850px;
   background-color: #000000;
   padding-top: 6%;
@@ -223,7 +230,7 @@ main {
   transform: translateY(-20px);
 }
 .all {
-  width: 100%;
+  max-width: 100%;
   margin-left: 10%;
   background-color: #000000;
   display: flex;
@@ -250,7 +257,7 @@ main {
   font-family: "Nunito", sans-serif;
   color: rgb(204, 204, 238);
   padding-left: 10%;
-  font-size: 70px;
+  font-size: calc(20px + 2vw);
   text-transform: uppercase;
 }
 
@@ -539,7 +546,7 @@ footer {
   padding-left: 12%;
 
   display: flex;
-  flex-direction: row Im !important;
+  flex-direction: row !important;
 }
 
 .social3 p {
@@ -551,7 +558,7 @@ footer {
   color: rgba(0, 0, 0, 0.732);
   padding-left: 10%;
 
-  font-size: 32px;
+  font-size: calc(20px + 4vw);
   text-transform: uppercase;
 }
 
@@ -611,7 +618,7 @@ footer {
 
 /*==============================================RESPONSIVE IN PROGRESS===============================================*/
 
-@media screen and (min-width: 1100px) and (max-width: 1500px) {
+@media screen and (min-width: 1150px) and (max-width: 1500px) {
   header img {
     margin-left: 0.4%;
   }
@@ -650,7 +657,7 @@ footer {
 
   .quotation2 {
     position: absolute;
-    right: 26%;
+    right: 16%;
     top: 45%;
   }
   .part3 h2 {
@@ -708,22 +715,273 @@ footer {
   .lineReview {
     width: 1%;
     top: 15%;
-    left: 47%;
+    left: 57%;
+  }
+}
+.mobile-btn {
+  overflow: hidden;
+}
+
+.mobile-btn .active {
+  overflow: visible;
+  padding-top: 7%;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+  .square2 {
+    left: 1%;
+  }
+
+  .square2 img {
+    position: absolute;
+    top: 0;
+    left: 0%;
+    width: 60vw;
+    height: 50vh;
+  }
+
+  .square {
+    display: none;
+  }
+
+  .square3 {
+    display: none;
+  }
+  .line {
+    color: white;
+    width: 0.1%;
+    height: 400px;
+    background-color: rgb(4, 0, 128);
+    position: absolute;
+    right: 35%;
+  }
+
+  .social {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 22%;
+    top: 50%;
+  }
+  header img {
+    margin-left: 16%;
+  }
+
+  .header-p {
+    font-size: calc(10px + 2vw);
+    font-family: "Roboto", sans-serif;
+
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 15%;
+    right: 0%;
+    width: 30%;
+  }
+
+  .quotation2 {
+    position: absolute;
+    right: 3%;
+    top: 45%;
+  }
+
+  .trust img {
+    width: 50px;
+  }
+
+  .trust {
+    padding-right: 7%;
+  }
+  /*===PART3 RESPONSIVE====*/
+  .imgPart3-1 {
+    display: none;
+  }
+
+  .part3 {
+    height: 920px;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+  .part3 h2 {
+    font-size: 35px;
+    color: rgb(46, 46, 48);
+    font-family: "Roboto", sans-serif;
+  }
+
+  .imgPart3 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    padding-top: 12%;
+    padding-left: 5%;
+  }
+  .textPart3 {
+    padding-top: 1%;
+    padding-left: 5%;
+  }
+  .part3 span {
+    font-style: bold;
+    color: #0d8aff;
+  }
+
+  .list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    margin-left: 5%;
+    margin-top: 1.7%;
+    color: rgb(46, 46, 48);
+    font-family: "Roboto", sans-serif;
+  }
+
+  .list h3 {
+    font-size: 25px;
+  }
+
+  .list p {
+    font-size: 19px;
+  }
+  .item1And2 {
+    width: 90%;
+    padding-left: 5%;
+  }
+
+  .item3And4 {
+    width: 90%;
+    padding-left: 5%;
+  }
+
+  /*part 4*/
+  .grid {
+    padding-left: 5%;
+  }
+
+  /*review*/
+  .lineReview {
+    width: 4%;
+    height: 100px;
+    top: 6%;
+    left: 58%;
+  }
+
+  /*FOOTER*/
+  .part6 {
+    height: 600px;
+  }
+  .imgPart6 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+
+  .imgPart6 .imgAnimal {
+    width: 20vw;
+    height: 20vh;
+    object-fit: contain;
+  }
+
+  .imgPart6-2 {
+    position: absolute;
+    bottom: 10%;
+  }
+
+  .imgPart6-2 p {
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  .bigH3 {
+    display: none;
+  }
+  .contact1 {
+    padding-right: 10%;
+    border-right: 2px solid rgb(255, 255, 255);
+  }
+
+  .contact1 {
+    padding-right: 20%;
+    border-right: 0px;
+  }
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+  .square2 {
+    left: 1%;
+  }
+
+  .square2 img {
+    position: absolute;
+    top: 0;
+    left: 75%;
+    width: 60vw;
+    height: 300px;
+  }
+
+  .square {
+    display: none;
+  }
+
+  .square3 {
+    display: none;
+  }
+
+  header img {
+    margin-left: 16%;
+  }
+
+  .header-p {
+    font-size: 28px;
+    top: 35%;
+    right: 15%;
+    width: 60%;
+  }
+
+  .line {
+    width: 0.1%;
+    height: 250px;
+    right: 79%;
+    top: 37%;
+  }
+
+  .social {
+    right: 55%;
+    top: 55%;
   }
 }
 
 @media screen and (min-width: 300px) and (max-width: 700px) {
   header {
     height: 850px;
+    max-width: 100vw;
+  }
+
+  main {
+    max-width: 100vw !important;
+  }
+  .disabled {
+    display: none;
+  }
+
+  .active {
+    overflow: visible;
+  }
+  .mobile-btn {
+    padding-top: 7%;
   }
 
   .square2 {
+    left: 1%;
+  }
+
+  .square2 img {
     position: absolute;
     top: 0;
-    left: -2%;
-    width: 5%;
+    left: 0%;
+    width: 93vw;
     height: 270px;
-    border-radius: 50%;
   }
 
   .square {
@@ -784,67 +1042,25 @@ footer {
 
   /*====PART2 RESPONSIVE=====*/
   .part2 {
-    height: 1050px;
-    background-color: #000000;
-    padding-top: 6%;
-    z-index: 10;
+    height: 1350px;
   }
-
-  .part2 img {
-    width: 45px;
+  .trust h2 {
+    text-align: center;
+    padding-right: 10%;
   }
-  .imgTrust {
-    cursor: pointer;
-  }
-  .imgTrust:hover {
-    transform: translateY(-20px);
-  }
-  .all {
-    width: 100%;
-    margin-left: 10%;
-    background-color: #000000;
-    display: flex;
-    flex-direction: row;
-    color: white;
+  .trust {
+    margin-top: 6%;
+    margin-right: 20%;
   }
   .tigers {
     display: none;
+    height: 0;
+    width: 0;
   }
 
-  .textPart2 {
-    margin-top: -3%;
+  .trust img {
+    width: 40px !important;
   }
-  .textPart2 h2 {
-    font-family: "Nunito", sans-serif;
-    color: rgb(204, 204, 238);
-    padding-left: 10%;
-    font-size: 40px;
-    text-transform: uppercase;
-  }
-
-  .textPart2 p {
-    width: 65%;
-    line-height: 25px;
-    padding-left: 10%;
-    font-family: "Roboto", sans-serif;
-  }
-
-  .trust h2 {
-    padding-top: 2%;
-  }
-  .trustCompany {
-    width: 100%;
-    margin-left: 4%;
-  }
-
-  .trustCompany img {
-    padding-left: 5%;
-    padding-top: 5%;
-  }
-  .trust h2 {
-    padding-top: 10%;
-  }
-
   /*===PART3 RESPONSIVE====*/
   .imgPart3-1 {
     display: none;
@@ -1035,8 +1251,9 @@ footer {
   }
 
   .imgPart6 .imgAnimal {
-    width: 80px;
-    height: 80px;
+    width: 20vw;
+    height: 20vh;
+    object-fit: contain;
   }
 
   .imgPart6-2 {
@@ -1049,13 +1266,17 @@ footer {
     font-weight: bold;
   }
 
-  .bigH3 span {
-    font-size: 55px;
+  .bigH3 {
+    display: none;
+  }
+  .contact1 {
+    padding-right: 10%;
+    border-right: 2px solid rgb(255, 255, 255);
   }
 
   .contact1 {
     padding-right: 20%;
-    border-right: 2px solid rgb(255, 255, 255);
+    border-right: 0px;
   }
 }
 
@@ -1132,67 +1353,21 @@ footer {
 
   /*====PART2 RESPONSIVE=====*/
   .part2 {
-    height: 1050px;
-    background-color: #000000;
-    padding-top: 6%;
-    z-index: 10;
+    height: 1000px;
   }
-
-  .part2 img {
-    width: 45px;
+  .trust h2 {
+    text-align: center;
+    padding-right: 16%;
   }
-  .imgTrust {
-    cursor: pointer;
-  }
-  .imgTrust:hover {
-    transform: translateY(-20px);
-  }
-  .all {
-    width: 100%;
-    margin-left: 10%;
-    background-color: #000000;
-    display: flex;
-    flex-direction: row;
-    color: white;
+  .trust {
+    margin-top: 8%;
+    margin-right: 39%;
   }
   .tigers {
     display: none;
+    height: 0;
+    width: 0;
   }
-
-  .textPart2 {
-    margin-top: -3%;
-  }
-  .textPart2 h2 {
-    font-family: "Nunito", sans-serif;
-    color: rgb(204, 204, 238);
-    padding-left: 10%;
-    font-size: 40px;
-    text-transform: uppercase;
-  }
-
-  .textPart2 p {
-    width: 65%;
-    line-height: 25px;
-    padding-left: 10%;
-    font-family: "Roboto", sans-serif;
-  }
-
-  .trust h2 {
-    padding-top: 2%;
-  }
-  .trustCompany {
-    width: 100%;
-    margin-left: 15%;
-  }
-
-  .trustCompany img {
-    padding-left: 5%;
-    padding-top: 5%;
-  }
-  .trust h2 {
-    padding-top: 10%;
-  }
-
   /*===PART3 RESPONSIVE====*/
   .imgPart3-1 {
     display: none;
@@ -1381,10 +1556,6 @@ footer {
   .imgPart6-2 p {
     font-size: 15px;
     font-weight: bold;
-  }
-
-  .bigH3 span {
-    font-size: 55px;
   }
 
   .contact1 {
